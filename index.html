@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ishwari Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Baloo+2:wght@700&display=swap" rel="stylesheet">
@@ -14,6 +15,14 @@
       <span class="nav-title">Ishwari's Portfolio</span>
       <span class="nav-icon right">✿</span>
     </div>
+    <button class="mobile-hamburger" onclick="toggleMobileMenu()">☰</button>
+    <ul class="nav-menu mobile-nav-menu" id="mobileNavMenu" style="display:none;">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#research" class="mobile-nav-link">Research</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+
     <ul class="nav-menu">
       <li><a href="#home">Home</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -21,6 +30,8 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
+ 
+
   <main id="home">
     <div class="hero-flex">
       <div class="hero-text">
