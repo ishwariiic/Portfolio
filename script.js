@@ -13,7 +13,7 @@ function typeAndDelete() {
       idx++;
       setTimeout(typeAndDelete, 70);
     } else {
-      // Pause at full text
+     
       setTimeout(() => {
         isDeleting = true;
         setTimeout(typeAndDelete, 50);
@@ -24,7 +24,7 @@ function typeAndDelete() {
       idx--;
       setTimeout(typeAndDelete, 40);
     } else {
-      // Switch to the next text
+     
       isDeleting = false;
       textIndex = (textIndex + 1) % texts.length;
       setTimeout(typeAndDelete, 300);
@@ -36,7 +36,7 @@ window.onload = typeAndDelete;
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Section titles
+
 if (window.gsap) {
   gsap.utils.toArray('.gsap-fadeup').forEach(el => {
     gsap.from(el, {
@@ -52,7 +52,7 @@ if (window.gsap) {
     });
   });
 
-  // Timeline items (left)
+ 
   gsap.utils.toArray('.gsap-fadeleft').forEach((el, i) => {
     gsap.from(el, {
       x: -80,
@@ -68,7 +68,7 @@ if (window.gsap) {
     });
   });
 
-  // Project cards (right)
+ 
   gsap.utils.toArray('.gsap-faderight').forEach((el, i) => {
     gsap.from(el, {
       x: 80,
@@ -84,7 +84,7 @@ if (window.gsap) {
     });
   });
 
-  // Contact/socials
+ 
   gsap.utils.toArray('.gsap-fadein').forEach(el => {
     gsap.from(el, {
       scale: 0.9,
@@ -111,7 +111,7 @@ if (window.gsap) {
       body.classList.add('mobile-menu-open');
     }
   }
-  // Close menu when a link is clicked
+ 
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
   mobileNavLinks.forEach(link => {
     link.addEventListener('click', () => {
