@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishwari's Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+    <nav class="navbar">
+      <div class="navbar-left">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/ishwariii-c-90751a260" target="_blank" rel="noopener noreferrer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect width="4" height="12" x="2" y="9"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://github.com/ishwariiic" target="_blank" rel="noopener noreferrer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+              <path d="M9 18c-4.51 2-5-2-7-2"></path>
+            </svg>
+          </a>
+          <a href="mailto:ishwarichaudhari841@gmail.com">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <div class="navbar-links">
+          <a href="#top" class="navbar-link">
+            <span class="navbar-link-inner">
+              <span>Home</span>
+            </span>
+          </a>
+          <a href="#about" class="navbar-link">
+            <span class="navbar-link-inner">
+              <span>About</span>
+            </span>
+          </a>
+          <a href="#projects" class="navbar-link">
+            <span class="navbar-link-inner">
+              <span>Projects</span>
+            </span>
+          </a>
+          <a href="#contact" class="navbar-link">
+            <span class="navbar-link-inner">
+              <span>Contact</span>
+            </span>
+          </a>
+          <button id="dark-mode-toggle" style="background:none;border:none;cursor:pointer;margin-left:1.5rem;display:flex;align-items:center;" aria-label="Toggle dark mode">
+            <span id="dark-mode-icon">
+            
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"></path></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    
+    <div id="animated-grid" class="fixed inset-0 w-full h-full opacity-10 -z-10 bg-cream"></div>
+    
+  
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-col hero-col-text">
+          <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
+            <p class="text-5xl md:text-7xl mb-2 font-lora">Hi, I'm Ishwari!</p>
+            <h3 class="tagline highlight-animate handwriting-font">
+                Crafting pixels &amp; logic into something people love
+              </h3>
+            <p class="text-xl text-gray-600">I'm Ishwari Chaudhari,a third year student at VIIT Pune. Blending logic with design, I craft clean, functional, and imaginative digital experiences that just <i>feel right</i>🧩</p>
+            <div class="mt-4"></div>
+            <div class="flex flex-row gap-4 hero-buttons-custom" style="flex-wrap: wrap; align-items: center;">
+              <a href="#projects" class="hero-btn hero-btn-pink">
+                <span>See My Projects</span> 
+              </a>
+              <button id="open-terminal-btn" class="hero-btn hero-btn-terminal" style="background:#222;color:#fff;border:none;padding:0.75rem 1.5rem;border-radius:8px;font-family:'Press Start 2P',monospace;font-size:1.1rem;cursor:pointer;transition:background 0.2s;letter-spacing:1px;">
+                Terminal
+              </button>
+              <div class="terminal-hint-container" style="display:flex;align-items:center;gap:0.7rem;margin-left:2rem;margin-top:0.5rem;position:relative;min-width:170px;">
+                <span class="terminal-hint-text yellow-highlight-animate" style="position:relative;display:inline-block;font-size:1.5rem;font-family:'Indie Flower',cursive;color:#111;white-space:nowrap;letter-spacing:1px;z-index:1;">Real devs click Terminal. Just sayin'</span>
+                <svg class="terminal-handdrawn-arrow" width="90" height="60" viewBox="0 0 90 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;left:170px;top:-45px;">
+                  <path d="M5 45 Q60 10 85 10" stroke="#222" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polygon points="85,10 80,7 82,13" fill="#222"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-col hero-col-img">
+          <div class="code-card">
+            <div class="code-card-header">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+            </div>
+            <pre class="code-block"><code>
+<span class="code-comment">//software engineer</span>
+<span class="code-keyword">const</span> <span class="code-variable">developer</span> <span class="code-operator">=</span> <span class="code-brace">&#123;</span>
+    <span class="code-property">name</span>: <span class="code-string">'Ishwari Chaudhari'</span>,
+    <span class="code-property">focus</span>: <span class="code-array">['Full-Stack','Data Analysis','UI-UX']</span>,
+    <span class="code-property">year</span>: <span class="code-string">'3rd Year B.Tech Student'</span>,
+    <span class="code-property">college</span>: <span class="code-string">'VIIT, Pune'</span>,
+    <span class="code-property">tools</span>: <span class="code-array">['HTML', 'CSS', 'JavaScript', 'React', 'Figma']</span>,
+<span class="code-brace">&#125;;</span><span class="code-cursor"></span>
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="work-exp-section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="work-exp-timeline" style="position:relative;">
+            <div class="work-exp-item" style="position:relative;">
+                <div class="work-exp-date">
+                    Nov. 2024 – Dec. 2024
+                    <span class="work-exp-dot" style="background:#e75480;"></span>
+                </div>
+                <div class="work-exp-content">
+                    <div class="work-exp-company">Wyreflow Technologies</div>
+                    <div class="work-exp-role">UI UX Design Intern</div>
+                    <div class="work-exp-desc">Redesigned and optimized the user experience for an EdTech platform, utilizing tools such as Figma, Framer, and Spline. <br>Reduced onboarding time by 30% through interactive prototypes and scalable design systems.
+                        Developed and implemented component libraries, ensuring visual consistency and seamless adaptability across multiple use cases, leading to a 37% increase in user signups.</div>
+                    <div class="work-exp-tags">
+                        <span>JavaScript</span><span>Figma</span><span>Framer</span><span>Spline</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+   
+    <section class="projects-section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-list">
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="image.png" alt="EatFit">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">EatFit</div>
+                    <div class="project-desc">Developed a web application for personalized, health-focused food ordering. Integrated the Gemini API to enable AI-powered meal recommendations with dynamic filtering based on user input. <br>Built a real-time nutrition dashboard using the Edamam API to display caloric and macronutrient data. Emphasized modular component design and performance optimization. Deployed the application on Vercel for reliable and fast access.
+
+                    </div>
+                    <div class="project-tags">
+                        <span>JavaScript</span><span>Python</span><span>NodeJs</span><span>MongoDB</span><span>Tailwind CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://eat-fit-sigma.vercel.app/" target="_blank" class="btn">View Project <span class="arrow">→</span></a>
+                        <a href="https://github.com/ishwariiic/Eat-Fit" target="_blank" class="btn">GitHub <span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="pj2.png" alt="Secure Together">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">SecureTogether</div>
+                    <div class="project-desc">Built and deployed a web platform to streamline community reporting of non-emergency issues like streetlight failures, noise, and infrastructure concerns. Developed with HTML, CSS, and JavaScript, and deployed on Vercel. <br>Integrated Leaflet.js for precise location-based issue mapping and Particle.js for dynamic visuals. Implemented JS-based workflows simulating authority-side resolution pipelines, with a dashboard for issue tracking, categorization, and location-based news updates.</div>
+                    <div class="project-tags">
+                        <span>JavaScript</span><span>SQL</span><span>Framer</span><span>Git</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://securetogether.vercel.app/" target="_blank" class="btn">View Project<span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGF0YSUyMCUyMGFuYWx5c2lzJTIwZGFzaGJvYXJkfGVufDB8fDB8fHww" alt="EDA">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Demographic Insights into Smoking Habits: Statistical Analysis and Predictive Modeling</div>
+                    <div class="project-desc">Conducted a comprehensive analysis of smoking behaviors using Python, focusing on demographic factors such as gender, age, income, and education.
+                      <br>Performed Chi-Square tests to examine statistical associations and validate hypotheses on smoking habits.
+                     <br> Applied Principal Component Analysis (PCA) for dimensionality reduction, improving model interpretability and performance.</div>
+                    <div class="project-tags">
+                        <span>Python</span><span>Pandas</span><span>NumPy</span><span>Streamlit</span><span>Scikit-learn</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1ckaQKw_ZDCdYPc1QP8PBE7NZSA9NzVra/view" target="_blank" class="btn">View Paper<span class="arrow">→</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1706612203418-e1f0f945e0f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHVuZGVyd2F0ZXIlMjBvYmplY3RzfGVufDB8fDB8fHww" alt="Underwater Plastic Detection">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">EDA on Underwater Plastic Detection from Sonar/Image Data</div>
+                    <div class="project-desc">Performed exploratory data analysis on sonar and image datasets to identify and classify underwater plastic debris. Utilized advanced statistical techniques and visualizations to uncover patterns, assess data quality, and clean the data for the development of machine learning models for environmental monitoring and pollution detection.</div>
+                    <div class="project-tags">
+                        <span>Python</span><span>Pandas</span><span>scikit-learn</span><span>NumPy</span><span>Seaborn</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="telemed.png" alt="DavaAI">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">DavaAI</div>
+                    <div class="project-desc">DavaAI is an IoT-based telemedicine platform designed to bring healthcare access to rural populations. This project focuses on providing an intuitive interface for remote consultations, health monitoring, and medicine delivery integration.</div>
+                    <div class="project-tags">
+                        <span>React</span><span>TailwindCSS</span><span>IoT</span><span>JavaScript</span><span>REST API</span>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="dashboard.png" alt="Temporal Analysis of CO₂ Emissions">
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Temporal Analysis of CO₂ Emissions for Climate Forecasting</div>
+                    <div class="project-desc">This project analyzes 25 years of global CO₂ emission data using advanced time-series visualizations built with Power BI. It uncovers emission trends, seasonal patterns, and anomalies, and recommends potential KPI (Key Performance Indicator) tiles to aid in dashboard-based monitoring for climate forecasting and policy decision-making.</div>
+                    <div class="project-tags">
+                        <span>Python</span><span>PowerBI</span><span>DAX Query</span><span>Pandas</span>
+                    </div>
+                  
+                </div>
+            </div>
+            
+           
+        </div>
+    </section>
+
+    
+    <section class="coding-stats-section" style="margin: 3rem 0 2rem 0;">
+      <h2 class="section-title" style="text-align:center; font-size:2rem; margin-bottom:1.2rem;">My Coding Stats</h2>
+      <p style="text-align:center; color:#444; font-size:1.1rem; margin-bottom:2rem;">Here's a quick look at my GitHub and LeetCode activity!</p>
+      <div class="coding-stats-cards" style="display:flex;justify-content:center;align-items:flex-start;gap:2rem;flex-wrap:wrap;">
+        <div class="coding-stats-card" style="background:transparent;padding:0;box-shadow:none;">
+          <img src="https://github-readme-stats.vercel.app/api?username=ishwariiic&show_icons=true&theme=radical" alt="GitHub Stats" style="max-width:100%;height:auto;border-radius:1.2rem;box-shadow:0 2px 12px #0001;" />
+        </div>
+        <div class="coding-stats-card" style="background:transparent;padding:0;box-shadow:none;">
+          <img src="https://leetcard.jacoblin.cool/ishwariiiic?theme=light&font=Baloo+Bhaijaan" alt="LeetCode Stats" style="max-width:100%;height:auto;border-radius:1.2rem;box-shadow:0 2px 12px #0001;" />
+        </div>
+      </div>
+      <div class="github-contrib-chart" style="margin:2.5rem auto 0 auto;max-width:700px;text-align:center;">
+        <h3 style="font-size:1.1rem;color:#444;margin-bottom:0.7rem;font-weight:500;">GitHub Contribution Chart</h3>
+        <img src="https://ghchart.rshah.org/ishwariiic" alt="GitHub Contribution Chart" style="width:100%;max-width:700px;min-width:220px;" />
+      </div>
+    </section>
+
+ 
+    <div id="fake-terminal-modal" style="display:none;position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.65);align-items:center;justify-content:center;">
+      <div id="fake-terminal" style="background:#18181b;color:#e5e5e5;width:95vw;max-width:600px;height:60vh;max-height:90vh;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,0.4);padding:0;display:flex;flex-direction:column;overflow:hidden;">
+        <div style="background:#23232b;padding:0.5rem 1rem;display:flex;align-items:center;gap:0.5rem;">
+          <span style="display:inline-block;width:12px;height:12px;background:#ff5f56;border-radius:50%;margin-right:4px;"></span>
+          <span style="display:inline-block;width:12px;height:12px;background:#ffbd2e;border-radius:50%;margin-right:4px;"></span>
+          <span style="display:inline-block;width:12px;height:12px;background:#27c93f;border-radius:50%;"></span>
+          <span style="flex:1;text-align:center;font-family:'Montserrat',sans-serif;font-size:1rem;color:#aaa;">Terminal</span>
+          <button id="close-terminal-btn" style="background:none;border:none;color:#fff;font-size:1.3rem;cursor:pointer;">&times;</button>
+        </div>
+        <div id="terminal-body" style="flex:1;padding:1rem;overflow-y:auto;font-family:'Fira Mono', 'Consolas', 'Menlo', monospace;font-size:1.05rem;line-height:1.6;background:#18181b;"></div>
+        <form id="terminal-form" style="display:flex;padding:0.5rem 1rem;background:#23232b;">
+          <span style="color:#7fff7f;font-family:'Fira Mono',monospace;">guest@portfolio:~$</span>
+          <input id="terminal-input" type="text" autocomplete="off" style="flex:1;background:transparent;border:none;color:#fff;font-size:1.05rem;font-family:'Fira Mono',monospace;outline:none;margin-left:0.5rem;" />
+        </form>
+      </div>
+    </div>
+
+   
+    <section class="about-section" id="about">
+      <div class="about-flex">
+       
+        <div class="about-image-side" style="flex:0 0 240px;display:flex;justify-content:center;align-items:flex-start;">
+          <img src="flowers.png" alt="Flowers" style="width:210px;max-width:100%;height:auto;border-radius:1.2rem;box-shadow:0 4px 24px #0002;object-fit:cover;background:#f5f3ea;" />
+        </div>
+       
+        <div class="about-content">
+          <h2 class="about-heading aboutme-lora">📂AboutMe.md</h2>
+          <div class="about-block">
+            <div class="about-block">
+              <p>
+                Hey, I'm Ishwari —a passionate developer who enjoys building things that are both useful and fun. I like using tech to solve real problems, especially the kind that impact people. But honestly? Not everything I make has to change the world. Sometimes I just code for fun — like this <a href="https://guitar-flame.vercel.app/" target="_blank">guitar</a> 
+                I built one lazy afternoon when I was bored.Basically, if it involves creativity, code, and a little bit of fun — I'm in.
+              </p>
+            </div>
+            <h3 class="about-heading"><span>📖</span> Hobbies</h3>
+            <ul>
+              <li>☆ Journaling —low-frequency thoughts, high-frequency feels-written down with way-too-fancy stationery (no regrets).
+
+              </li>
+              <li>☆ Reading — detective stories with twists I <i>pretend</i> I saw coming</li>
+            </ul>
+          </div>
+          
+          <div class="about-block">
+            <h3 class="about-heading"><span>🎵</span> I am probably listening to-</h3>
+           
+            <div style="margin-top:1rem;">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3liOnWUe0m0bi4gjaBIkAu?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="site-footer" style="width:100%;text-align:center;padding:1.2rem 0 1.5rem 0;font-size:1.1rem;color:#444;font-family:'Quicksand',sans-serif;letter-spacing:0.5px;background:transparent;">
+      made with <span class="pulsing-heart" style="display:inline-block;vertical-align:middle;font-size:1.3em;">💗</span> by Ishwari
+    </footer>
+
+    <style>
+    @media (max-width: 600px) {
+      .hero-buttons-custom {
+        flex-direction: column !important;
+        align-items: stretch !important;
+      }
+      .terminal-hint-container {
+        margin-left: 0 !important;
+        margin-top: 1.2rem !important;
+        justify-content: flex-start !important;
+        min-width: 0 !important;
+      }
+      .terminal-handdrawn-arrow {
+        left: 50% !important;
+        top: 40px !important;
+        transform: rotate(90deg) !important;
+      }
+    }
+    .highlight-animate {
+      background: none;
+    }
+    .highlight-animate::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 1.2em;
+      background: #c9a2f5;
+      border-radius: 0.4em;
+      z-index: -1;
+      animation: highlight-grow-purple 1.2s cubic-bezier(.7,0,.3,1) forwards;
+    }
+    @keyframes highlight-grow-purple {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    
+    .yellow-highlight-animate {
+      background: none;
+    }
+    .yellow-highlight-animate::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 1.2em;
+      background: #ffe066;
+      border-radius: 0.4em;
+      z-index: -1;
+      animation: yellow-highlight-grow 1.2s cubic-bezier(.7,0,.3,1) forwards;
+    }
+    @keyframes yellow-highlight-grow {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    .work-exp-timeline {
+      position: relative;
+      padding-left: 48px;
+    }
+    .work-exp-dot {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 8px #e7548080;
+      position: relative;
+      z-index: 2;
+    }
+    .work-exp-date {
+      position: relative;
+      padding-left: 48px;
+      font-size: 1.3rem;
+      color: #888;
+    }
+    @media (max-width: 600px) {
+      .work-exp-date {
+        padding-left: 32px;
+        font-size: 1.05rem;
+      }
+      .work-exp-dot {
+        width: 12px;
+        height: 12px;
+      }
+    }
+    @media (max-width: 600px) {
+      .projects-section {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+      }
+      .project-item {
+        flex-direction: column !important;
+        margin-bottom: 2.2rem !important;
+        border-radius: 1.2rem !important;
+        box-shadow: 0 2px 12px #0001;
+        padding: 0.7rem 0.7rem 1.2rem 0.7rem !important;
+        background: transparent !important;
+      }
+      .project-image {
+        width: 100% !important;
+        margin-bottom: 1rem !important;
+        display: flex;
+        justify-content: center;
+      }
+      .project-image img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        border-radius: 1.2rem !important;
+        box-shadow: 0 2px 8px #0002;
+      }
+      .project-content {
+        padding: 0.5rem 0.5rem 0 0.5rem !important;
+        font-size: 1.05rem !important;
+      }
+      .project-title {
+        font-size: 1.25rem !important;
+        margin-bottom: 0.5rem !important;
+      }
+      .project-desc {
+        margin-bottom: 0.7rem !important;
+        line-height: 1.6 !important;
+      }
+      .project-tags {
+        margin-bottom: 1rem !important;
+        gap: 0.5rem !important;
+        flex-wrap: wrap !important;
+      }
+      .project-tags span {
+        margin-bottom: 0.3rem !important;
+        font-size: 0.95rem !important;
+        padding: 0.3rem 0.7rem !important;
+      }
+      .project-links {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 0.7rem !important;
+        margin-top: 0.7rem !important;
+        justify-content: flex-start !important;
+        flex-wrap: wrap !important;
+      }
+      .project-links a.btn {
+        width: auto !important;
+        min-width: 120px;
+        font-size: 1.1rem !important;
+        padding: 0.7rem 1.2rem !important;
+        border-radius: 0.7rem !important;
+        text-align: center;
+        margin-bottom: 0.2rem;
+      }
+    }
+    @media (max-width: 700px) {
+      .coding-stats-cards {
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+        align-items: center !important;
+      }
+      .coding-stats-card img {
+        width: 100vw !important;
+        max-width: 98vw !important;
+        min-width: 0 !important;
+      }
+    }
+    .about-section {
+      background: #f8f5e9;
+      border-radius: 1.2rem;
+      padding: 2.5rem 1.5rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 12px #0001;
+      min-height: 300px;
+    }
+    .about-flex {
+      display: flex;
+      gap: 2.5rem;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .about-image-side {
+      flex: 0 0 240px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .about-content {
+      flex: 1 1 320px;
+      max-width: 600px;
+    }
+    .section-title {
+      font-family: 'Montserrat', serif;
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+      text-align: left;
+    }
+    .about-block {
+      margin-bottom: 2rem;
+    }
+    .about-heading {
+      font-family: 'Indie Flower', cursive !important;
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 0.7rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .about-heading.aboutme-lora {
+      font-family: 'Lora', serif !important;
+    }
+    .about-block ul {
+      margin: 0 0 0.7rem 1.2rem;
+      padding: 0;
+      list-style: none;
+    }
+    .about-block li {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+    .about-block p {
+      font-size: 1.08rem;
+      color: #444;
+      margin: 0;
+      line-height: 1.7;
+    }
+    @media (max-width: 800px) {
+      .about-flex {
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-content {
+        max-width: 100%;
+      }
+    }
+    @media (max-width: 600px) {
+      .about-flex {
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-image-side {
+        flex: none !important;
+        width: 100% !important;
+        max-width: 220px !important;
+        margin: 0 auto 1.2rem auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .about-image-side img {
+        width: 90vw !important;
+        max-width: 220px !important;
+        height: auto !important;
+        border-radius: 1.2rem !important;
+        margin-bottom: 1.2rem !important;
+        box-shadow: 0 4px 24px #0002;
+      }
+      .about-content {
+        max-width: 100vw !important;
+        padding: 0 0.5rem !important;
+        font-size: 1rem !important;
+      }
+      .section-title {
+        text-align: left !important;
+        font-size: 1.5rem !important;
+        margin-top: 0.5rem !important;
+        margin-bottom: 1rem !important;
+      }
+    }
+    @keyframes pulse-heart {
+      0% { transform: scale(1); }
+      20% { transform: scale(1.2); }
+      40% { transform: scale(0.95); }
+      60% { transform: scale(1.15); }
+      80% { transform: scale(0.98); }
+      100% { transform: scale(1); }
+    }
+    .pulsing-heart {
+      animation: pulse-heart 1.2s infinite;
+    }
+    .dark-mode {
+      background: #18181b !important;
+      color: #f8f5e9 !important;
+    }
+    .dark-mode .about-section {
+      background: #23232b !important;
+      color: #f8f5e9 !important;
+    }
+    .dark-mode .projects-section, .dark-mode .work-exp-section, .dark-mode .coding-stats-section {
+      background: #18181b !important;
+      color: #f8f5e9 !important;
+    }
+    .dark-mode .site-footer {
+      background: #18181b !important;
+      color: #f8f5e9 !important;
+    }
+    .dark-mode .btn, .dark-mode .hero-btn, .dark-mode .btn.hero-btn-pink {
+      background: #23232b !important;
+      color: #f8f5e9 !important;
+      border: none !important;
+    }
+    .dark-mode .btn:hover, .dark-mode .hero-btn:hover, .dark-mode .btn.hero-btn-pink:hover {
+      background: #444 !important;
+      color: #fff !important;
+    }
+    .dark-mode .highlight-animate::before {
+      background: #b983ff !important; /* neon purple for dark mode */
+      opacity: 0.85;
+    }
+    .dark-mode .yellow-highlight-animate::before {
+      background: #ffe066 !important;
+      filter: brightness(0.7);
+    }
+    .dark-mode .code-card {
+      background: #23232b !important;
+      color: #e5e5e5 !important;
+      border: 1px solid #333 !important;
+    }
+    .dark-mode .code-card-header {
+      background: #18181b !important;
+    }
+    .dark-mode .code-block {
+      background: #23232b !important;
+      color: #e5e5e5 !important;
+    }
+    .dark-mode .code-comment { color: #7fffd4 !important; }
+    .dark-mode .code-keyword { color: #82aaff !important; }
+    .dark-mode .code-variable { color: #fff !important; }
+    .dark-mode .code-operator { color: #82aaff !important; }
+    .dark-mode .code-brace { color: #fff !important; }
+    .dark-mode .code-property { color: #f8f5e9 !important; }
+    .dark-mode .code-string { color: #ffb86c !important; }
+    .dark-mode .code-array { color: #b9f27c !important; }
+    .dark-mode .work-exp-dot { box-shadow: 0 2px 8px #e75480cc; border: 3px solid #23232b; }
+    .dark-mode .project-tags span, .dark-mode .work-exp-tags span {
+      background: #333 !important;
+      color: #fff !important;
+    }
+    .dark-mode .project-item {
+      background: #23232b !important;
+      box-shadow: 0 2px 12px #0006 !important;
+    }
+    .dark-mode .project-image img {
+      box-shadow: 0 4px 24px #000a !important;
+    }
+    .dark-mode .about-image-side img {
+      box-shadow: 0 4px 24px #000a !important;
+    }
+    .dark-mode .section-title {
+      color: #f8f5e9 !important;
+    }
+    .dark-mode .about-heading {
+      color: #f8f5e9 !important;
+    }
+    .dark-mode .about-block p, .dark-mode .about-block li {
+      color: #e5e5e5 !important;
+    }
+    .dark-mode .github-contrib-chart h3 {
+      color: #f8f5e9 !important;
+    }
+    .dark-mode .terminal-hint-text {
+      color: #18181b !important;
+    }
+    .dark-mode .terminal-hint-container .yellow-highlight-animate::before {
+      background: #ffe066 !important;
+      filter: brightness(0.7);
+    }
+    .dark-mode .hero-section {
+      color: #f8f5e9 !important;
+    }
+    .dark-mode .hero-section .text-5xl, .dark-mode .hero-section .md\:text-7xl, .dark-mode .hero-section .hero-title {
+      color: #fff !important;
+      text-shadow: 0 2px 8px #0006;
+    }
+    .dark-mode .hero-section .tagline, .dark-mode .hero-section .highlight-animate {
+      color: #23232b !important;
+    }
+    .dark-mode .hero-section .text-xl, .dark-mode .hero-section .text-gray-600 {
+      color: #bfc6d1 !important;
+    }
+    .dark-mode .navbar {
+      background: transparent !important;
+      border-bottom: 1px solid #23232b !important;
+    }
+    .dark-mode .navbar-link {
+      color: #f8f5e9 !important;
+      transition: color 0.2s;
+    }
+    .dark-mode .navbar-link:hover, .dark-mode .navbar-link:focus {
+      color: #b983ff !important;
+    }
+    </style>
+
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleBtn = document.getElementById('dark-mode-toggle');
+      const iconSpan = document.getElementById('dark-mode-icon');
+      const body = document.body;
+      
+      if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+        iconSpan.innerHTML = sunSVG();
+      } else {
+        body.classList.remove('dark-mode');
+        iconSpan.innerHTML = moonSVG();
+      }
+      toggleBtn.addEventListener('click', function() {
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode')) {
+          iconSpan.innerHTML = sunSVG();
+          localStorage.setItem('theme', 'dark');
+        } else {
+          iconSpan.innerHTML = moonSVG();
+          localStorage.setItem('theme', 'light');
+        }
+      });
+      function moonSVG() {
+        return `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"></path></svg>`;
+      }
+      function sunSVG() {
+        return `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffe066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5" fill="#ffe066"/><line x1="12" y1="1" x2="12" y2="3" stroke="#ffe066"/><line x1="12" y1="21" x2="12" y2="23" stroke="#ffe066"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="#ffe066"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="#ffe066"/><line x1="1" y1="12" x2="3" y2="12" stroke="#ffe066"/><line x1="21" y1="12" x2="23" y2="12" stroke="#ffe066"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="#ffe066"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="#ffe066"/></svg>`;
+      }
+     
+      const animatedGrid = document.getElementById('animated-grid');
+      function setGridColor() {
+        if (document.body.classList.contains('dark-mode')) {
+          animatedGrid.style.backgroundImage = `
+            linear-gradient(to right, #f8f5e9 1px, transparent 1px),
+            linear-gradient(to bottom, #f8f5e9 1px, transparent 1px)
+          `;
+        } else {
+          animatedGrid.style.backgroundImage = `
+            linear-gradient(to right, #6c7583 1px, transparent 1px),
+            linear-gradient(to bottom, #6c7583 1px, transparent 1px)
+          `;
+        }
+      }
+      setGridColor();
+      const observer = new MutationObserver(setGridColor);
+      observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    });
+    </script>
+</body>
+</html> 
