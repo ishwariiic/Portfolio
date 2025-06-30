@@ -197,7 +197,7 @@ document.head.appendChild(style);
     projects: `EatFit: Personalized food ordering with AI recommendations.<br>Secure Together-a platform to report non-emergency issues`,
     contact: `Email: <a href='mailto:ishwarichaudhari841@email.com' style='color:#7fff7f'>ishwarichaudhari841@email.com</a><br>LinkedIn: <a href='https://www.linkedin.com/in/ishwariii-c-90751a260' target='_blank' style='color:#7fff7f'>LinkedIn</a><br>GitHub: <a href='https://github.com/ishwariiic' target='_blank' style='color:#7fff7f'>Github</a>`,
     joke: () => jokes[Math.floor(Math.random() * jokes.length)],
-    tech: `My tech-stack: <span style='color:#7fff7f'>'Tailwaind-CSS', 'JavaScript', 'React', 'Figma'</span>`,
+    tech: `My tech-stack: <span style='color:#7fff7f'>'Tailwind-CSS', 'JavaScript', 'React', 'Figma'</span>`,
     clear: '',
     default: `Command not found. Type <span style='color:#7fff7f'>help</span> for a list of commands.`
   };
